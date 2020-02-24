@@ -12,6 +12,8 @@ class PlaneGame(object):
         self.clock = pygame.time.Clock()
         # 创建精灵及精灵组
         self.__create_sprites()
+        # 创建敌机
+        pygame.time.set_timer(ENEMY_EVENT, 1000)
 
     def start_game(self):
         """ 游戏开始 """
@@ -35,6 +37,8 @@ class PlaneGame(object):
         # 第二张背景图片出现在第一张的正上方
         back_ground2 = BackGround(True)
         self.back_group = pygame.sprite.Group(back_ground1, back_ground2)
+        # 创建敌机精灵组
+        self.enemy_group = pygame.sprite.Group()
 
     def __event_handler(self):
         """  事件监听 """
@@ -42,6 +46,11 @@ class PlaneGame(object):
             # 是否退出游戏
             if event.type == pygame.QUIT:
                 PlaneGame.__game_over()
+            elif event.type == ENEMY_EVENT:
+                # 创建敌机精灵
+                enemy = Enemy()
+                # 添加敌机精灵至精灵组
+                self.enemy_group.add(enemy)
 
     def __check_collide(self):
         """ 碰撞检测 """
@@ -51,6 +60,9 @@ class PlaneGame(object):
         """  更新精灵及精灵组 """
         self.back_group.update()
         self.back_group.draw(self.screen)
+
+        self.enemy_group.update()
+        self.enemy_group.draw(self.screen)
 
     @staticmethod
     def __game_over():

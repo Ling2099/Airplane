@@ -1,3 +1,4 @@
+import random
 import pygame
 
 # 屏幕大小
@@ -6,6 +7,10 @@ SCREEN_RECT = pygame.Rect(0, 0, 480, 700)
 FRAME_RATE = 60
 # 游戏背景图片相对路径
 BACKGROUND_PATH = "./images/background.png"
+# 敌机图片相对路径
+ENEMY_PATH = "./images/enemy1.png"
+# 敌机定时器
+ENEMY_EVENT = pygame.USEREVENT
 
 
 class GameSpite(pygame.sprite.Sprite):
@@ -22,6 +27,7 @@ class GameSpite(pygame.sprite.Sprite):
 
 
 class BackGround(GameSpite):
+    """  背景图片精灵类 """
 
     def __init__(self, is_alt=False):
         # 调用父类初始化实现背景精灵的创建
@@ -38,3 +44,23 @@ class BackGround(GameSpite):
         if self.rect.y >= SCREEN_RECT.height:
             self.rect.y = - self.rect.height
 
+
+class Enemy(GameSpite):
+    """  敌机精灵类 """
+
+    def __init__(self):
+        # 调用父类创建敌机
+        super().__init__(ENEMY_PATH)
+        # 初始化敌机随机速度
+        self.speed = random.randint(1, 5)
+        # 初始化敌机随机位置
+        self.rect.bottom = 0
+        self.rect.x = random.randint(0, SCREEN_RECT.width - self.rect.width)
+
+    def update(self):
+        # 保持垂直飞行
+        super().update()
+        # 判断是否飞出屏幕
+        if self.rect.y >= SCREEN_RECT.height:
+            # 将精灵从精灵组中删除 同时销毁内存
+            self.kill()
