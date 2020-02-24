@@ -13,7 +13,7 @@ class PlaneGame(object):
         # 创建精灵及精灵组
         self.__create_sprites()
         # 创建敌机
-        pygame.time.set_timer(ENEMY_EVENT, 1000)
+        pygame.time.set_timer(ENEMY_EVENT, 500)
 
     def start_game(self):
         """ 游戏开始 """

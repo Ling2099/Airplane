@@ -58,7 +58,7 @@ class Enemy(GameSpite):
         self.rect.x = random.randint(0, SCREEN_RECT.width - self.rect.width)
 
     def update(self):
-        # 保持垂直飞行
+        # 保持敌机垂直飞行
         super().update()
         # 判断是否飞出屏幕
         if self.rect.y >= SCREEN_RECT.height:
