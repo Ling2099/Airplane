@@ -13,8 +13,12 @@ ENEMY_PATH = "./images/enemy1.png"
 HERO_PATH = "./images/me1.png"
 # 子弹图片相对路径
 BULLET_PATH = "./images/bullet1.png"
+# 爆炸图片相对路径
+BOMB_PATH = "./images/enemy1_down3.png"
 # 敌机定时器
 ENEMY_EVENT = pygame.USEREVENT
+# 发射子弹定时器
+FIRE_EVENT = pygame.USEREVENT + 1
 
 
 class GameSpite(pygame.sprite.Sprite):
@@ -56,7 +60,7 @@ class Enemy(GameSpite):
         # 调用父类创建敌机
         super().__init__(ENEMY_PATH)
         # 初始化敌机随机速度
-        self.speed = random.randint(1, 6)
+        self.speed = random.randint(1, 10)
         # 初始化敌机随机位置
         self.rect.bottom = 0
         self.rect.x = random.randint(0, SCREEN_RECT.width - self.rect.width)
@@ -79,6 +83,8 @@ class Hero(GameSpite):
         # 初始化英雄位置
         self.rect.centerx = SCREEN_RECT.centerx
         self.rect.bottom = SCREEN_RECT.bottom - 120
+        # 初始化子弹精灵及精灵组
+        self.bullets = pygame.sprite.Group()
 
     def update(self):
         """  控制英雄移动 """
@@ -100,12 +106,31 @@ class Hero(GameSpite):
         elif self.rect.bottom > SCREEN_RECT.height:
             self.rect.bottom = SCREEN_RECT.height
 
+    def fire(self):
+        """  发射子弹 """
+        # 初始化子弹精灵并设置位置
+        for i in (0, 1):
+            bullet = Bullet()
+            bullet.rect.bottom = self.rect.y - i * 20
+            bullet.rect.centerx = self.rect.centerx
+            self.bullets.add(bullet)
+
 
 class Bullet(GameSpite):
     """  子弹精灵类 """
 
     def __init__(self):
-        super().__init__()
+        # 初始化子弹图片
+        super().__init__(BULLET_PATH, -2)
 
     def update(self):
-        pass
+        # 调用父类方法 子弹沿垂直方向飞行
+        super().update()
+        # 判断子弹是否飞出屏幕
+        if self.rect.bottom < 0:
+            # 将精灵从精灵组中删除 同时销毁内存
+            self.kill()
+
+
+
+
