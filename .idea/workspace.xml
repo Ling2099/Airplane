@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a370ac03-b1ef-4d86-bf4a-0d103b96df64" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plane_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/plane_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plane_sprites.py" beforeDir="false" afterPath="$PROJECT_DIR$/plane_sprites.py" afterDir="false" />
@@ -16,15 +15,15 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Airplane$StartGame.coverage" NAME="StartGame Coverage Results" MODIFIED="1582435292089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Airplane$plane_sprites.coverage" NAME="plane_sprites Coverage Results" MODIFIED="1582372634577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Airplane$plane_main.coverage" NAME="plane_main Coverage Results" MODIFIED="1582559639126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Airplane$plane_main.coverage" NAME="plane_main Coverage Results" MODIFIED="1582602484364" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plane_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+            <state relative-caret-position="200">
+              <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -32,10 +31,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plane_sprites.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+            <state relative-caret-position="267">
+              <caret line="80" column="38" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
               <folding>
                 <element signature="e#0#6#0" expanded="true" />
+                <element signature="e#189#462#0" />
                 <element signature="e#499#903#0" />
               </folding>
             </state>
@@ -69,9 +69,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="186" />
-    <option name="y" value="168" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="224" />
+    <option name="y" value="174" />
     <option name="width" value="1340" />
     <option name="height" value="698" />
   </component>
@@ -88,6 +88,11 @@
             <path>
               <item name="Airplane" type="b2602c69:ProjectViewProjectNode" />
               <item name="Airplane" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Airplane" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Airplane" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -189,7 +194,7 @@
       <workItem from="1582468507598" duration="3414000" />
       <workItem from="1582538378258" duration="21000" />
       <workItem from="1582538461866" duration="1491000" />
-      <workItem from="1582555378133" duration="4671000" />
+      <workItem from="1582555378133" duration="7938000" />
     </task>
     <task id="LOCAL-00001" summary="2020.02.24">
       <created>1582559817398</created>
@@ -202,13 +207,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29915000" />
+    <option name="totallyTimeSpent" value="33182000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="186" y="168" width="1340" height="698" extended-state="0" />
-    <editor active="true" />
+    <frame x="224" y="174" width="1340" height="698" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2921875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2921875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -317,19 +321,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/bullet1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/bullet2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/plane_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+        <state relative-caret-position="200">
+          <caret line="70" column="41" lean-forward="true" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plane_sprites.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+        <state relative-caret-position="267">
+          <caret line="80" column="38" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
           <folding>
             <element signature="e#0#6#0" expanded="true" />
+            <element signature="e#189#462#0" />
             <element signature="e#499#903#0" />
           </folding>
         </state>

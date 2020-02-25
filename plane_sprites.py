@@ -9,6 +9,10 @@ FRAME_RATE = 60
 BACKGROUND_PATH = "./images/background.png"
 # 敌机图片相对路径
 ENEMY_PATH = "./images/enemy1.png"
+# 英雄图片相对路径
+HERO_PATH = "./images/me1.png"
+# 子弹图片相对路径
+BULLET_PATH = "./images/bullet1.png"
 # 敌机定时器
 ENEMY_EVENT = pygame.USEREVENT
 
@@ -64,3 +68,21 @@ class Enemy(GameSpite):
         if self.rect.y >= SCREEN_RECT.height:
             # 将精灵从精灵组中删除 同时销毁内存
             self.kill()
+
+
+class Hero(GameSpite):
+    """  英雄精灵类 """
+
+    def __init__(self):
+        # 调用父类创建英雄及速度
+        super().__init__(HERO_PATH, 0)
+        # 初始化英雄位置
+        self.rect.centerx = SCREEN_RECT.centerx
+        self.rect.bottom = SCREEN_RECT.bottom - 120
+
+
+class Bullet(GameSpite):
+    """  子弹精灵类 """
+
+    def __init__(self):
+        super().__init__()

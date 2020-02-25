@@ -39,6 +39,9 @@ class PlaneGame(object):
         self.back_group = pygame.sprite.Group(back_ground1, back_ground2)
         # 创建敌机精灵组
         self.enemy_group = pygame.sprite.Group()
+        # 创建英雄精灵及精灵组
+        self.hero = Hero()
+        self.hero_group = pygame.sprite.Group(self.hero)
 
     def __event_handler(self):
         """  事件监听 """
@@ -63,6 +66,9 @@ class PlaneGame(object):
 
         self.enemy_group.update()
         self.enemy_group.draw(self.screen)
+
+        self.hero_group.update()
+        self.hero_group.draw(self.screen)
 
     @staticmethod
     def __game_over():
