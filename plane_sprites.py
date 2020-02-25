@@ -56,7 +56,7 @@ class Enemy(GameSpite):
         # 调用父类创建敌机
         super().__init__(ENEMY_PATH)
         # 初始化敌机随机速度
-        self.speed = random.randint(1, 5)
+        self.speed = random.randint(1, 6)
         # 初始化敌机随机位置
         self.rect.bottom = 0
         self.rect.x = random.randint(0, SCREEN_RECT.width - self.rect.width)
