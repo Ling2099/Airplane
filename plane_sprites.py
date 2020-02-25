@@ -80,9 +80,32 @@ class Hero(GameSpite):
         self.rect.centerx = SCREEN_RECT.centerx
         self.rect.bottom = SCREEN_RECT.bottom - 120
 
+    def update(self):
+        """  控制英雄移动 """
+        self.rect.x += self.speed
+        """  自加功能 """
+        # 英雄上下移动
+        if pygame.key.get_pressed()[pygame.K_UP]:
+            self.rect.y += -3
+        elif pygame.key.get_pressed()[pygame.K_DOWN]:
+            self.rect.y += 3
+        # 英雄左右边界控制
+        if self.rect.x <= 0:
+            self.rect.x = 0
+        elif self.rect.right > SCREEN_RECT.right:
+            self.rect.right = SCREEN_RECT.right
+        # 英雄上下边界控制
+        if self.rect.y <= 0:
+            self.rect.y = 0
+        elif self.rect.bottom > SCREEN_RECT.height:
+            self.rect.bottom = SCREEN_RECT.height
+
 
 class Bullet(GameSpite):
     """  子弹精灵类 """
 
     def __init__(self):
         super().__init__()
+
+    def update(self):
+        pass
