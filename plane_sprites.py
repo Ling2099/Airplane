@@ -13,8 +13,6 @@ ENEMY_PATH = "./images/enemy1.png"
 HERO_PATH = "./images/me1.png"
 # 子弹图片相对路径
 BULLET_PATH = "./images/bullet1.png"
-# 爆炸图片相对路径
-BOMB_PATH = "./images/enemy1_down3.png"
 # 敌机定时器
 ENEMY_EVENT = pygame.USEREVENT
 # 发射子弹定时器

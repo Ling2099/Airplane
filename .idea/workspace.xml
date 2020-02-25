@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a370ac03-b1ef-4d86-bf4a-0d103b96df64" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plane_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/plane_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plane_sprites.py" beforeDir="false" afterPath="$PROJECT_DIR$/plane_sprites.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plane_main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="549">
+              <caret line="91" column="34" lean-forward="true" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -31,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plane_sprites.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="264">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -68,8 +66,8 @@
       <list>
         <option value="$PROJECT_DIR$/StartGame.py" />
         <option value="$PROJECT_DIR$/start_game.py" />
-        <option value="$PROJECT_DIR$/plane_sprites.py" />
         <option value="$PROJECT_DIR$/plane_main.py" />
+        <option value="$PROJECT_DIR$/plane_sprites.py" />
       </list>
     </option>
   </component>
@@ -195,7 +193,7 @@
       <workItem from="1582538461866" duration="1491000" />
       <workItem from="1582555378133" duration="7938000" />
       <workItem from="1582602470852" duration="1301000" />
-      <workItem from="1582610453806" duration="11799000" />
+      <workItem from="1582610453806" duration="12043000" />
     </task>
     <task id="LOCAL-00001" summary="2020.02.24">
       <created>1582559817398</created>
@@ -208,18 +206,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46282000" />
+    <option name="totallyTimeSpent" value="46526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20575693" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20575693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4984375" visible="true" weight="0.17381974" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4984375" visible="true" weight="0.17381974" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39914164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -359,8 +356,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plane_sprites.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="264">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
@@ -369,8 +366,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plane_main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+        <state relative-caret-position="549">
+          <caret line="91" column="34" lean-forward="true" selection-start-line="91" selection-start-column="34" selection-end-line="91" selection-end-column="34" />
         </state>
       </provider>
     </entry>
